@@ -18,8 +18,8 @@ MainClass main;
 std::vector<String> imageDirs = {"/image_dirname1", "/image_dirname2"};
 
 uint8_t dirIndex = 0;
-std::vector<const uint8_t*> fbuf;
-std::vector<int32_t> fbufsize;
+std::vector<const uint8_t*> fbuf;  //画像情報
+std::vector<int32_t> fbufsize;     //サイズ情報
 uint32_t fpsCount = 0, fpsSec = 0;
 
 // SD Card 中の Jpg data を fbuf,fbufsize にコピーする。
